@@ -1,0 +1,129 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 1
+$
+$ TC: 1  Procedure = main                  Description = loop
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_main
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Main.c
+      Procedure = main
+      Procedure Number = 1
+      Description = loop
+        # Begin Variable
+          Name = %
+          Decl_type = int32_t
+          Usage = O
+          Value = 0
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = getchar
+ 
+        # Begin TC Stub Return Value
+          Name = %
+          Type = char
+          Value = '1','2','3','4','5','q'
+        # End TC Stub Return Value
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Userinterface_parse
+  Overloading = Prototype
+  # Begin Overloading
+const char_t
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 6
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Main.c
+    Procedure = main
+    Procedure Number = 1
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = Userinterface_help
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_parse
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const char_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = getchar
+  Method = Managed
+  # Begin MS Properties
+  
+    Override Return Type = T
+    Return Type = char
+    System Stub = T
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

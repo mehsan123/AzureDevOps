@@ -1,0 +1,139 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 1
+$
+$ TC: 1  Procedure = Productdatabase_resetCountedProducts  Description = zero
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Productdatabase_resetCountedProducts
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Productdatabase.c
+      Procedure = Productdatabase_resetCountedProducts
+      Procedure Number = 4
+      Description = zero
+        # Begin Variable
+          Name = CountedProductList[5].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[4].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[3].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[2].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[1].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[0].count
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[0].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[1].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[2].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[3].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[4].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = CountedProductList[5].count
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Productdatabase.c
+    Procedure = Productdatabase_resetCountedProducts
+    Procedure Number = 4
+# End Isolated Procedure
+
+# Begin Selected Files from Set
+./Productdatabase.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

@@ -1,0 +1,539 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 8
+$
+$ TC: 1  Procedure = Userinterface_parse   Description = 'b'
+$ TC: 2  Procedure = Userinterface_parse   Description = 'c'
+$ TC: 3  Procedure = Userinterface_parse   Description = 'e'
+$ TC: 4  Procedure = Userinterface_parse   Description = 's'
+$ TC: 5  Procedure = Userinterface_parse   Description = 'r'
+$ TC: 6  Procedure = Userinterface_parse   Description = '\n'
+$ TC: 7  Procedure = Userinterface_parse   Description = '\r'
+$ TC: 8  Procedure = Userinterface_parse   Description = 'h'
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_parse_commands
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 'b'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 'b'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = Cashregister_code
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 'c'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 'c'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = Cashregister_cancel
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 3
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 'e'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 'e'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = Cashregister_end
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 4
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 's'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 's'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = Cashregister_start
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 5
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 'r'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 'r'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = randomShopping
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 6
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = '\n'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = '\n'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = randomShopping
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Userinterface_help
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_start
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_end
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_code
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_cancel
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 7
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = '\r'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = '\r'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = randomShopping
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Userinterface_help
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_start
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_end
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_code
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_cancel
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 8
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_parse
+      Procedure Number = 3
+      Description = 'h'
+        # Begin Variable
+          Name = aChar
+          Decl_type = char_t
+          Usage = Z
+          Value = 'h'
+        # End Variable
+
+      # Begin TC Stub
+        Procedure = Userinterface_help
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Userinterface.c
+    Procedure = Userinterface_parse
+    Procedure Number = 3
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = Cashregister_barcode
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+/* To Do : Enter code for stub global declarations here */
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_cancel
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_code
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_end
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_key
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+/* To Do : Enter code for stub global declarations here */
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_start
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_help
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = goodbye
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+/* To Do : Enter code for stub global declarations here */
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = randomShopping
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Userinterface.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

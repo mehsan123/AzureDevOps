@@ -1,0 +1,204 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 2
+$
+$ TC: 1  Procedure = randomShopping        Description = cancel
+$ TC: 2  Procedure = randomShopping        Description = barcode
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_randomShopping
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = randomShopping
+      Procedure Number = 2
+      Description = cancel
+      # Begin TC Stub
+        Procedure = Cashregister_start
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_end
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      
+      # Begin TC Stub
+        Procedure = Cashregister_barcode
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 2
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = randomShopping
+      Procedure Number = 2
+      Description = barcode
+      
+      # Begin TC Stub
+        Procedure = Cashregister_start
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Cashregister_end
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      
+      # Begin TC Stub
+        Procedure = Cashregister_barcode
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 2
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Userinterface.c
+    Procedure = randomShopping
+    Procedure Number = 2
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = Cashregister_barcode
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_cancel
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_end
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Cashregister_start
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Userinterface.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

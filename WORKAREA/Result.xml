@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <ldraglh creator="Eclipse" type="rules">
+        <files>
+            <file source="D:\AzureDevOps\Cashregister_6.0\Source\Userinterface.c" model="FACE-3.0-CVM">
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="40" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="40" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="40" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="40" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="50" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="50" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="50" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="50" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : rand() should be substituted by rand_r()" line="52" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : rand" line="52" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : rand" line="52" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : rand" line="52" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : rand() should be substituted by rand_r()" line="53" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : rand" line="53" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : rand" line="53" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : rand" line="53" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="71" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="71" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="71" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="71" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="72" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="72" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="72" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="72" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="73" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="73" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="73" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="73" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="74" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="74" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="74" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="74" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="75" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="75" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="75" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="75" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="76" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="76" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="76" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="76" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="77" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="77" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="77" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="77" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="78" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="78" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="78" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="78" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="79" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="79" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="79" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="79" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="80" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="80" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="80" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="80" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="81" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="81" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="81" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="81" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="82" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="82" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="82" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="82" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="83" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="83" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="83" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="83" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="84" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="84" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="84" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="84" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="147" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="147" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="147" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="147" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="154" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="154" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="154" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="154" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+            </file>
+            <file source="D:\AzureDevOps\Cashregister_6.0\Source\Specialoffer.c" model="FACE-3.0-CVM">
+            </file>
+            <file source="D:\AzureDevOps\Cashregister_6.0\Source\Productdatabase.c" model="FACE-3.0-CVM">
+            </file>
+            <file source="D:\AzureDevOps\Cashregister_6.0\Source\Main.c" model="FACE-3.0-CVM">
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : getchar" line="35" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : getchar" line="35" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : getchar" line="35" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : printf() should be substituted by fprintf()" line="30" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : printf" line="30" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : printf" line="30" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : printf" line="30" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+            </file>
+            <file source="D:\AzureDevOps\Cashregister_6.0\Source\Cashregister.c" model="FACE-3.0-CVM">
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : sprintf() should be substituted by snprintf()" line="65" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : sprintf" line="65" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : sprintf" line="65" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : sprintf" line="65" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : sprintf() should be substituted by snprintf()" line="141" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : sprintf" line="141" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : sprintf" line="141" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : sprintf" line="141" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : sprintf() should be substituted by snprintf()" line="150" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : sprintf" line="150" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : sprintf" line="150" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : sprintf" line="150" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+                    <violation ldrarule="1 F" desc="Function restricted by POSIX Safety Profile substitution. : sprintf() should be substituted by snprintf()" line="183" level="Mandatory" ref="FACE-2.1.1-CVM 1945,1955;FACE-3.0-CVM 286,292,321,339,344;"/>
+                    <violation ldrarule="2 F" desc="Use of FACE Security Profile excluded function. : sprintf" line="183" level="Mandatory" ref="FACE-2.1.1-CVM 1517,1519,1525,1527,1945;FACE-3.0-CVM 286,292,307,344;"/>
+                    <violation ldrarule="3 F" desc="Use of FACE Safety Base Profile excluded function. : sprintf" line="183" level="Mandatory" ref="FACE-2.1.1-CVM 1546,1549,1557,1561,1945;FACE-3.0-CVM 286,292,321,344;"/>
+                    <violation ldrarule="4 F" desc="Use of FACE Safety Extended Profile excluded function. : sprintf" line="183" level="Mandatory" ref="FACE-2.1.1-CVM 1587,1590,1595,1600,1628,1945;FACE-3.0-CVM 286,292,339,344;"/>
+            </file>
+        </files>
+        <models>
+           <model name="MyOwnStandardPlus" />
+           <model name="MOD" />
+           <model name="Honeywell" />
+           <model name="MyStandard" />
+           <model name="BARR-C" />
+           <model name="BARR-C:2013" />
+           <model name="BARR-C:2018" />
+           <model name="CAST" />
+           <model name="CERT-C" />
+           <model name="CERT-C:2008" />
+           <model name="CERT-C:2014" />
+           <model name="CERT-C:2016" />
+           <model name="CMSE" />
+           <model name="CONFORM" />
+           <model name="Customer Sample" />
+           <model name="CWE" />
+           <model name="CWE-2.11" />
+           <model name="CWE-3.4" />
+           <model name="DERA" />
+           <model name="EADS-C" />
+           <model name="FACE-2.1.1-CVM" />
+           <model name="FACE-3.0-CVM" />
+           <model name="FACE-CVM" />
+           <model name="FSB582-C" />
+           <model name="GJB" />
+           <model name="GJB_5369" />
+           <model name="GJB_8114" />
+           <model name="GM-L1" />
+           <model name="GM-L2" />
+           <model name="HIS" />
+           <model name="JPL" />
+           <model name="Legacy" />
+           <model name="MISRA-AC" />
+           <model name="MISRA-C:1998" />
+           <model name="MISRA-C:2004" />
+           <model name="MISRA-C:2012" />
+           <model name="MISRA-C:2012(Ed 3 Rev 1)" />
+           <model name="MISRA-C:2012(Ed 3)" />
+           <model name="MISRA-C:2012/AMD1" />
+           <model name="MISRA-C:2012/AMD1/TC1" />
+           <model name="MISRA-C:2012/AMD2" />
+           <model name="MISRA-C:2012/TC1" />
+           <model name="NUREG_CR-6463" />
+           <model name="RUNTIME" />
+           <model name="SEC-C" />
+           <model name="SEC-Cv1" />
+           <model name="SEC-Cv2" />
+           <model name="SEC-Cv3" />
+           <model name="secureC" />
+           <model name="Standard" />
+           <model name="TBrun Requires" />
+           <model name="UML" />
+           <model name="VSOS" />
+        </models>
+    </ldraglh>

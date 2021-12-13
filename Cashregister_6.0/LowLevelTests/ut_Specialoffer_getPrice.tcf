@@ -1,0 +1,439 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 10
+$
+$ TC: 1  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 2  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 3  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 4  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 5  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 6  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 7  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 8  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC: 9  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$ TC:10  Procedure = Specialoffer_getPrice  Description = LLR_040101
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = White
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = wb_Specialoffer_getPrice
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 2
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 5
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = NO_OFFER
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 10
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 2
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 5
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = BUY_ONE_GET_ONE_FREE
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 5
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 3
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 2
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 5
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = TEN_PERCENT_OFF
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 9
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 4
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 50
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 5
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 2
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 100
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 6
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 3
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 100
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 7
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 4
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 150
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 8
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 5
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 200
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 9
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 6
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 200
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 10
+    # Begin Test Case
+      File = ./Specialoffer.c
+      Procedure = Specialoffer_getPrice
+      Procedure Number = 1
+      Description = LLR_040101
+        # Begin Variable
+          Name = aQuantity
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 7
+        # End Variable
+
+        # Begin Variable
+          Name = aUnitPrice
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 50
+        # End Variable
+
+        # Begin Variable
+          Name = anOffer
+          Decl_type = tSpecialoffer
+          Usage = Z
+          Value = THREE_FOR_ONE_EURO
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = uint32_t
+          Usage = O
+          Value = 250
+        # End Variable
+
+    # End Test Case
+
+# Begin Stub
+  Procedure = Userinterface_help
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_parse
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const char_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Specialoffer.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

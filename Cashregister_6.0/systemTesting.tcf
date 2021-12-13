@@ -1,0 +1,25 @@
+# Begin Testbed  Set 
+
+   SET_TYPE = SYSTEM 
+   SET_NAME = SystemTesting
+
+   #Begin Source Files
+
+      File = .\Cashregister_6.0\Source\Cashregister.c
+      File = .\Cashregister_6.0\Source\Main.c
+      File = .\Cashregister_6.0\Source\Productdatabase.c
+      File = .\Cashregister_6.0\Source\Specialoffer.c
+      File = .\Cashregister_6.0\Source\Userinterface.c
+
+   # End Source Files
+
+   # Begin Sysearch Include File Entries
+
+   # End Sysearch Include Files Entries
+
+ # End Testbed Set
+
+# Begin Options
+   open_all_includes = True
+   include = True
+# End Options

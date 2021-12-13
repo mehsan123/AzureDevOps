@@ -1,0 +1,229 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 2
+$
+$ TC: 1  Procedure = identifyProduct       Description = valid barcode
+$ TC: 2  Procedure = identifyProduct       Description = invalid barcode
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_identifyProduct
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = identifyProduct
+      Procedure Number = 5
+      Description = valid barcode
+        # Begin Variable
+          Name = aBarcode
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 12345
+        # End Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = Q
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = addProduct
+  Overloading = Prototype
+  # Begin Overloading
+const struct Product *
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = identifyProduct
+      Procedure Number = 5
+      Description = invalid barcode
+        # Begin Variable
+          Name = aBarcode
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 999
+        # End Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = Q
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = Userinterface_show
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+        # Begin TC Stub Input Params
+          Name = displayMsg
+          Type = const_char_pt
+          Value = "Unknown barcode"
+        # End TC Stub Input Params
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = Productdatabase_getProduct
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+        # Begin TC Stub Return Value
+          Name = %
+          Type = const struct Product *
+          Value = NULL
+        # End TC Stub Return Value
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = identifyProduct
+    Procedure Number = 5
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = Productdatabase_getProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = &ldra_qq_lv_1
+    # Begin Declarations
+    # End Declarations
+    # Begin Local Declarations
+static struct Product ldra_qq_lv_1;
+    # End Local Declarations
+
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_show
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = addProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const struct Product *
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

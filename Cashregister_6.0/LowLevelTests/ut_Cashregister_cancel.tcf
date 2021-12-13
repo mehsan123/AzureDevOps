@@ -1,0 +1,283 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 3
+$
+$ TC: 1  Procedure = Cashregister_cancel   Description = remove product
+$ TC: 2  Procedure = Cashregister_cancel   Description = idle
+$ TC: 3  Procedure = Cashregister_cancel   Description = remove again
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Cashregister_cancel
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_cancel
+      Procedure Number = 9
+      Description = remove product
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Active
+        # End Variable
+
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = H
+          Value = state_Active
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = removeLastProduct
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # Begin TC Stub Code Segment
+--scannedProducts;
+      # End TC Stub Code Segment
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_cancel
+      Procedure Number = 9
+      Description = idle
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Active
+        # End Variable
+
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = H
+          Value = state_Idle
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = endSession
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 3
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_cancel
+      Procedure Number = 9
+      Description = remove again
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Idle
+        # End Variable
+
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = H
+          Value = state_Idle
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = removeLastProduct
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+      # Begin TC Stub
+        Procedure = endSession
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = Cashregister_cancel
+    Procedure Number = 9
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = endSession
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = removeLastProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

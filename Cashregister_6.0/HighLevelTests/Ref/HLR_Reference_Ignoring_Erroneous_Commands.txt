@@ -1,0 +1,65 @@
+LDRA MISRA C:2012 Cash Register
+choices are :
+            : 0-9 to compose barcode
+            : b to enter barcode
+            : c to cancel last product
+            : r to do random shopping
+            : s to start
+            : e to end
+            : n for Coconuts
+            : p for Pears
+            : l for Lychees
+            : k for Kiwis
+            : g for Pomegranates
+            : w for Watermelons
+            : q to quit program
+choices are :
+            : 0-9 to compose barcode
+            : b to enter barcode
+            : c to cancel last product
+            : r to do random shopping
+            : s to start
+            : e to end
+            : n for Coconuts
+            : p for Pears
+            : l for Lychees
+            : k for Kiwis
+            : g for Pomegranates
+            : w for Watermelons
+            : q to quit program
+Ready
+
+Unknown barcode
+Adding Pears
+Adding Coconuts
+Removing Coconuts
+Adding Pomegranates
+Adding Pears
+Adding Pomegranates
+Unknown barcode
+Removing Pomegranates
+Adding Kiwis
+Adding Coconuts
+Adding Pomegranates
+Adding Pomegranates
+Adding Pears
+Unknown barcode
+Adding Pears
+Adding Coconuts
+Adding Kiwis
+Removing Kiwis
+Adding Lychees
+
+=======================================
+====   LDRA MISRA C  Supermarket   ====
+=======================================
+    Coconuts  2 at   1.80*    3.24
+     Lychees  1 at   2.50     2.50
+       Kiwis  1 at   0.50*    0.50
+       Pears  4 at   1.00     4.00
+Pomegranates  3 at   1.99*    3.98
+                    total =  14.22
+=======================================
+ 
+
+ok bye

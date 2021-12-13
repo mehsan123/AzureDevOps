@@ -1,0 +1,243 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 3
+$
+$ TC: 1  Procedure = generateTicket        Description = LLR_01000
+$ TC: 2  Procedure = generateTicket        Description = LLR_01000
+$ TC: 3  Procedure = generateTicket        Description = LLR_01000
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_generateTicket
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = generateTicket
+      Procedure Number = 5
+      Description = LLR_01000
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = generateTicket
+      Procedure Number = 5
+      Description = LLR_01000
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = Productdatabase_getSpecificCountedProduct
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+        # Begin TC Stub Return Value
+          Name = %
+          Type = struct CountedProduct *
+          Value = &CP_APPLES,&CP_PEARS,NULL
+        # End TC Stub Return Value
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 3
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = generateTicket
+      Procedure Number = 5
+      Description = LLR_01000
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = G
+          Packed = T
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = Productdatabase_getSpecificCountedProduct
+  Overloading = Prototype
+      # Begin TC Stub Code Segment
+static count=0;
+count++;
+if ( count <= 52 ) {
+  return &APPLES;
+} else {
+  return NULL;
+}
+      # End TC Stub Code Segment
+
+      # End TC Stub
+
+    # End Test Case
+
+    # Begin Global
+      File = ./Cashregister.c
+      Name = APPLES
+      Decl_type = struct Product
+      Value = {"APPLE",12345,12345,NO_OFFER}
+    # End Global
+
+    # Begin Global
+      File = ./Cashregister.c
+      Name = PEARS
+      Decl_type = struct Product
+      Value = {"PEAR",33,12346,BUY_ONE_GET_ONE_FREE}
+    # End Global
+
+    # Begin Global
+      File = ./Cashregister.c
+      Name = CP_APPLES
+      Decl_type = struct CountedProduct
+      Value = {&APPLES,3}
+    # End Global
+
+    # Begin Global
+      File = ./Cashregister.c
+      Name = CP_PEARS
+      Decl_type = struct CountedProduct
+      Value = {&PEARS,4}
+    # End Global
+
+  # Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = digit_to_char
+    Procedure Number = 1
+  # End Isolated Procedure
+
+  # Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = generateTicket
+    Procedure Number = 5
+  # End Isolated Procedure
+
+# Begin Stub
+  Procedure = Productdatabase_getSpecificCountedProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = &ldra_qq_lv_1
+    # Begin Declarations
+    # End Declarations
+    # Begin Local Declarations
+static struct CountedProduct ldra_qq_lv_1;
+    # End Local Declarations
+
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Specialoffer_getPrice
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+const uint32_t
+const tSpecialoffer
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = aQuantity
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_print
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = countProducts
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

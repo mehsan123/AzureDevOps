@@ -1,0 +1,62 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 1
+$
+$ TC: 1  Procedure = Userinterface_print   Description = print
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Userinterface_print
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Userinterface.c
+      Procedure = Userinterface_print
+      Procedure Number = 7
+      Description = print
+        # Begin Variable
+          Name = printerMsg
+          Decl_type = const_char_pt
+          Usage = Z
+          Value = "hello"
+        # End Variable
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Userinterface.c
+    Procedure = Userinterface_print
+    Procedure Number = 7
+# End Isolated Procedure
+
+# Begin Selected Files from Set
+./Userinterface.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

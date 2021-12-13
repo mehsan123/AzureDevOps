@@ -1,0 +1,23 @@
+LDRA MISRA C:2012 Cash Register
+choices are :
+            : 0-9 to compose barcode
+            : b to enter barcode
+            : c to cancel last product
+            : r to do random shopping
+            : s to start
+            : e to end
+            : n for Coconuts
+            : p for Pears
+            : l for Lychees
+            : k for Kiwis
+            : g for Pomegranates
+            : w for Watermelons
+            : q to quit program
+Ready
+Adding Coconuts
+Adding Lychees
+Removing Lychees
+Removing Coconuts
+ 
+
+ok bye

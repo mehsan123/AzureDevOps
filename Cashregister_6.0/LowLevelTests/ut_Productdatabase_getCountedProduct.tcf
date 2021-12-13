@@ -1,0 +1,120 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 3
+$
+$ TC: 1  Procedure = Productdatabase_getCountedProduct  Description = first index
+$ TC: 2  Procedure = Productdatabase_getCountedProduct  Description = invalid index
+$ TC: 3  Procedure = Productdatabase_getCountedProduct  Description = last index
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Productdatabase_getCountedProduct
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Productdatabase.c
+      Procedure = Productdatabase_getCountedProduct
+      Procedure Number = 2
+      Description = first index
+        # Begin Variable
+          Name = bProduct
+          Decl_type = struct Product*
+          Usage = Z
+          Value = &ProductList[0]
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = struct CountedProduct *
+          Usage = O
+          TBrun Analysis = Compare
+          Value = (struct CountedProduct *)(0)
+          Comparison = ==
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Productdatabase.c
+      Procedure = Productdatabase_getCountedProduct
+      Procedure Number = 2
+      Description = invalid index
+        # Begin Variable
+          Name = bProduct
+          Decl_type = struct Product*
+          Usage = Z
+          Value = NULL
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = struct CountedProduct *
+          Usage = O
+          TBrun Analysis = Compare
+          Value = (struct CountedProduct *)(0)
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 3
+    # Begin Test Case
+      File = ./Productdatabase.c
+      Procedure = Productdatabase_getCountedProduct
+      Procedure Number = 2
+      Description = last index
+        # Begin Variable
+          Name = bProduct
+          Decl_type = struct Product*
+          Usage = Z
+          Value = &ProductList[5]
+        # End Variable
+
+        # Begin Variable
+          Name = %
+          Decl_type = struct CountedProduct *
+          Usage = O
+          TBrun Analysis = Compare
+          Value = (struct CountedProduct *)(0)
+          Comparison = ==
+        # End Variable
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Productdatabase.c
+    Procedure = Productdatabase_getCountedProduct
+    Procedure Number = 2
+# End Isolated Procedure
+
+# Begin Selected Files from Set
+./Productdatabase.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

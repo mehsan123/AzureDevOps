@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TBmanagerXML>
+    <Project_Metadata block="Project Metadata">
+        <New>No</New>
+        <SubProject>No</SubProject>
+        <Project_Version>TBmanager 9.8.6</Project_Version>
+        <Project_Attributes>
+            <SubProjectPath>$(ProjectDir)/Subprojects</SubProjectPath>
+            <ProjectIndex ProjectInternal="y">1</ProjectIndex>
+            <SubprojectCounter ProjectInternal="y">2</SubprojectCounter>
+            <CreationVersion>TBmanager 9.8.4</CreationVersion>
+            <ReqTypesInitialized>y</ReqTypesInitialized>
+            <NextCounter_1_rqt1>1</NextCounter_1_rqt1>
+            <NextCounter_1_rqt2>1</NextCounter_1_rqt2>
+            <NextCounter_1_rqt3>1</NextCounter_1_rqt3>
+            <NextCounter_1_rqt4>1</NextCounter_1_rqt4>
+            <NextCounter_1_rqt5>1</NextCounter_1_rqt5>
+            <NextCounter_1_rqt6>1</NextCounter_1_rqt6>
+            <NextCounter_1_rqt7>1</NextCounter_1_rqt7>
+            <NextCounter_1_rqt8>1</NextCounter_1_rqt8>
+            <NextCounter_1_rqt9>1</NextCounter_1_rqt9>
+            <AutomaticallySyncAllSubprojects>y</AutomaticallySyncAllSubprojects>
+            <AutoAcceptIdenticalSuggestionsFromMultipleUsers>y</AutoAcceptIdenticalSuggestionsFromMultipleUsers>
+            <AutomaticallyReassignTasks>y</AutomaticallyReassignTasks>
+            <SharedTciDefectGenInit>y</SharedTciDefectGenInit>
+            <ImportLLFromTBreq>n</ImportLLFromTBreq>
+            <InitDefaultReportTags>y</InitDefaultReportTags>
+            <DefaultCodeReviewTag>1_tag1</DefaultCodeReviewTag>
+            <DefaultQualityReviewTag>1_tag2</DefaultQualityReviewTag>
+            <DefaultCodeCoverageTag>1_tag3</DefaultCodeCoverageTag>
+            <DefaultUnitTestTag>1_tag4</DefaultUnitTestTag>
+            <UseTimeInDateTime>n</UseTimeInDateTime>
+            <AutoPmLogin>y</AutoPmLogin>
+            <DV_NumberCounter ProjectInternal="y"/>
+            <DV_NumberIncrement ProjectInternal="y"/>
+            <LL_NumberCounter ProjectInternal="y"/>
+            <LL_NumberIncrement ProjectInternal="y"/>
+            <TC_NumberCounter ProjectInternal="y"/>
+            <TC_NumberIncrement ProjectInternal="y"/>
+            <SR_NumberCounter ProjectInternal="y"/>
+            <SR_NumberIncrement ProjectInternal="y"/>
+            <HL_NumberCounter ProjectInternal="y"/>
+            <HL_NumberIncrement ProjectInternal="y"/>
+            <SYS_NumberCounter ProjectInternal="y"/>
+            <SYS_NumberIncrement ProjectInternal="y"/>
+            <CallgraphCounter ProjectInternal="y">1</CallgraphCounter>
+            <ClassCounter ProjectInternal="y">1</ClassCounter>
+            <DefectCounter ProjectInternal="y">1</DefectCounter>
+            <DocumentCounter ProjectInternal="y">133</DocumentCounter>
+            <DocumentFormatCounter ProjectInternal="y">6</DocumentFormatCounter>
+            <FlowgraphCounter ProjectInternal="y">1</FlowgraphCounter>
+            <NamespaceCounter ProjectInternal="y">1</NamespaceCounter>
+            <NoteCounter ProjectInternal="y">1</NoteCounter>
+            <ObjectiveCounter ProjectInternal="y">1</ObjectiveCounter>
+            <OgCallgraphCounter ProjectInternal="y">8</OgCallgraphCounter>
+            <OgFlowgraphCounter ProjectInternal="y">11</OgFlowgraphCounter>
+            <OgPlaceholderCounter ProjectInternal="y">10</OgPlaceholderCounter>
+            <ParameterCounter ProjectInternal="y">27</ParameterCounter>
+            <PathCounter ProjectInternal="y">170</PathCounter>
+            <PlaceholderCounter ProjectInternal="y">6</PlaceholderCounter>
+            <ProcedureCounter ProjectInternal="y">51</ProcedureCounter>
+            <ReferenceRequirementCounter ProjectInternal="y">1</ReferenceRequirementCounter>
+            <RequirementGroupCounter ProjectInternal="y">2</RequirementGroupCounter>
+            <RoleCounter ProjectInternal="y">3</RoleCounter>
+            <SetCounter ProjectInternal="y">2</SetCounter>
+            <SourceFileCounter ProjectInternal="y">6</SourceFileCounter>
+            <StyleFormatCounter ProjectInternal="y">25</StyleFormatCounter>
+            <SubdocumentCounter ProjectInternal="y">1</SubdocumentCounter>
+            <TagCounter ProjectInternal="y">21</TagCounter>
+            <TciPropertyCounter ProjectInternal="y">10</TciPropertyCounter>
+            <TemplateCounter ProjectInternal="y">1</TemplateCounter>
+            <TemplateThreadCounter ProjectInternal="y">1</TemplateThreadCounter>
+            <TemplateVerificationGroupCounter ProjectInternal="y">1</TemplateVerificationGroupCounter>
+            <TestCaseCounter ProjectInternal="y">154</TestCaseCounter>
+            <ThreadCounter ProjectInternal="y">212</ThreadCounter>
+            <UserCounter ProjectInternal="y">2</UserCounter>
+            <VerificationGroupCounter ProjectInternal="y">1</VerificationGroupCounter>
+            <VerificationRuleCounter ProjectInternal="y">1</VerificationRuleCounter>
+            <VerificationStampCounter ProjectInternal="y">55</VerificationStampCounter>
+            <ThreadVerificationGroupCounter ProjectInternal="y">1</ThreadVerificationGroupCounter>
+            <VRuleTestCaseCounter ProjectInternal="y">1</VRuleTestCaseCounter>
+            <ProgramCounter ProjectInternal="y">33</ProgramCounter>
+            <LanguageCounter ProjectInternal="y">5</LanguageCounter>
+            <ColorCounter ProjectInternal="y">1</ColorCounter>
+            <UserAttributeCounter ProjectInternal="y">14</UserAttributeCounter>
+            <TextValidatorCounter ProjectInternal="y">10</TextValidatorCounter>
+            <UserMacroCounter ProjectInternal="y">2</UserMacroCounter>
+            <TestTypeCounter ProjectInternal="y">16</TestTypeCounter>
+            <DocumentFormatSettingCounter ProjectInternal="y">12</DocumentFormatSettingCounter>
+            <GroupCounter ProjectInternal="y">8</GroupCounter>
+            <ThreadTypeCounter ProjectInternal="y">10</ThreadTypeCounter>
+            <CmVersionCounter ProjectInternal="y">1</CmVersionCounter>
+            <CmConfigurationCounter ProjectInternal="y">1</CmConfigurationCounter>
+            <CmStateCounter ProjectInternal="y">1</CmStateCounter>
+            <RelCounter ProjectInternal="y">1</RelCounter>
+            <RegexFormatCounter ProjectInternal="y">6</RegexFormatCounter>
+            <PlaceholdersHaveEvalDependency>n</PlaceholdersHaveEvalDependency>
+            <UnmapUnverifiesThread>n</UnmapUnverifiesThread>
+            <AutomaticallyExpandReports>n</AutomaticallyExpandReports>
+            <TBreqChangesTBmanagerLinks>n</TBreqChangesTBmanagerLinks>
+            <DefectOpenStatusValues/>
+            <DefectCloseStatusValues/>
+        </Project_Attributes>
+    </Project_Metadata>
+    <Login block="Login" UID="1_usr1">2839887f9539806cbf77c85142b8317d213708a553525af98dc3e21c80bd59fd3</Login>
+</TBmanagerXML>

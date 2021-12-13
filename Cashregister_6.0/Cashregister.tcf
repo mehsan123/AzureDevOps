@@ -1,0 +1,47 @@
+# Begin Testbed Set
+ 
+   SET_TYPE = SYSTEM
+   SET_NAME = Cashregister
+   GENERATED_BY = SCRIPT
+ 
+   # Begin Source Files
+ 
+      File = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\Cashregister.c 
+      File = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\Main.c 
+      File = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\Productdatabase.c 
+      File = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\Specialoffer.c 
+      File = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\Userinterface.c 
+ 
+   # End Source Files
+ 
+   # Begin Sysearch Include File Entries
+ 
+      SearchPath = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source 
+ 
+   # End Sysearch Include File Entries
+ 
+   # Begin Sysppvar Preprocessor Macros
+ 
+      MacroEntry = TUTORIAL 1 
+ 
+   # End Sysppvar Preprocessor Macros
+ 
+# End Testbed Set
+ 
+# Begin Options
+ 
+ $ Options for static analysis
+   include = True
+   open_all_includes = False
+   shorten = True
+   cstandards_model = MISRA-C:2012
+   cexternal_standard = MISRA-C:2012
+ 
+ $ Options for dynamic analysis
+   nb_substitute_source = True
+   nb_mechanism = makefile
+   nb_makefile_name = Cashregister.mak
+   nb_start_in_dir = C:\_LDRA_Workarea\1002_RC3\Examples\Toolsuite\Cashregister_6.0\Source\
+   nb_makefile_command = mingw32-make -f "$(Makefile)" $(MakeGoal) $(MakeArgs)
+ 
+# End Options

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+    <Global>
+        <Connections>
+            <Connection name="DNG" port="" save="true" server="https://host.docker.internal:9443/rm" username="markr">
+                <Entry1>IGqIQZCh0armPZBNXv9qNgScrnaTxQetpQz5iquv1hU=</Entry1>
+                <Entry2>RrWSb8gRpucWBL4BtlQjkg==</Entry2>
+            </Connection>
+        </Connections>
+    </Global>
+    <Bridges>
+        <Bridge connection="DNG" id="1_grp1">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.doorsng_985/091020104125.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Identifier</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">Identifier</data>
+                    <data name="internalName">identifier</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Verification Status</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">Verification Status</data>
+                    <data name="internalName">_mtjnYcyzEeq54f539KzPTw</data>
+                    <writeable>y</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>System</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value>_XdGMA8tpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>SLR</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>_BpjAIMtpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="DNG" id="1_grp2">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.doorsng_985/091020110116.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Identifier</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">Identifier</data>
+                    <data name="internalName">identifier</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Verification Status</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">Verification Status</data>
+                    <data name="internalName">_mtjnYcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LINK:Parent</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">LINK:Parent</data>
+                    <data name="internalName">Parent</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>High Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value>_X4d5YctpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>HLR</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>_BpjAIMtpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="DNG" id="1_grp3">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.doorsng_985/091020110601.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Identifier</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">Identifier</data>
+                    <data name="internalName">identifier</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LINK:Parent</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">LINK:Parent</data>
+                    <data name="internalName">Parent</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Verification Status</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">Verification Status</data>
+                    <data name="internalName">_mtjnYcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Reference</name>
+                    <format>$(Reference)</format>
+                    <split/>
+                    <regex var="Reference">.+</regex>
+                    <data name="displayName">Reference</data>
+                    <data name="internalName">_mxIf0cyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>Low Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value>_YCmFwctpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LLR</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>_BpjAIMtpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="DNG" id="1_grp5">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.doorsng_985/091020123618.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Title</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">Title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Identifier</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">Identifier</data>
+                    <data name="internalName">identifier</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LINK:Parent</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">LINK:Parent</data>
+                    <data name="internalName">Parent</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Test Outputs</name>
+                    <format>$(Test Outputs)</format>
+                    <split/>
+                    <regex var="Test Outputs">.+</regex>
+                    <data name="displayName">Test Outputs</data>
+                    <data name="internalName">_m0NB8cyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Verification Status</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">Verification Status</data>
+                    <data name="internalName">_mtjnYcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Test Inputs</name>
+                    <format>$(Test Inputs)</format>
+                    <split/>
+                    <regex var="Test Inputs">.+</regex>
+                    <data name="displayName">Test Inputs</data>
+                    <data name="internalName">_myvCUcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: TCF</name>
+                    <format>$(TCF)</format>
+                    <split/>
+                    <regex var="TCF">.+</regex>
+                    <data name="displayName">TCF</data>
+                    <data name="internalName">_mzkv0cyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>Unit Test</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value>_XrZGsctpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LLT</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>_BpjAIMtpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="DNG" id="1_grp7">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.doorsng_985/091020123744.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Title</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">Title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Identifier</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">Identifier</data>
+                    <data name="internalName">identifier</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LINK:Parent</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">LINK:Parent</data>
+                    <data name="internalName">Parent</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Verification Status</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">Verification Status</data>
+                    <data name="internalName">_mtjnYcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Reference_File</name>
+                    <format>$(Reference_File)</format>
+                    <split/>
+                    <regex var="Reference_File">.+</regex>
+                    <data name="displayName">Reference_File</data>
+                    <data name="internalName">_mumJMcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Output_File</name>
+                    <format>$(Output_File)</format>
+                    <split/>
+                    <regex var="Output_File">.+</regex>
+                    <data name="displayName">Output_File</data>
+                    <data name="internalName">_mv5wwcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Program</name>
+                    <format>$(Program)</format>
+                    <split/>
+                    <regex var="Program">.+</regex>
+                    <data name="displayName">Program</data>
+                    <data name="internalName">_mvC1IcyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Input_File</name>
+                    <format>$(Input_File)</format>
+                    <split/>
+                    <regex var="Input_File">.+</regex>
+                    <data name="displayName">Input_File</data>
+                    <data name="internalName">_mveS8cyzEeq54f539KzPTw</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>External Task</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value>_XjQeYctpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>HLT</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>_BpjAIMtpEeqTw4WrZuKYvw</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+    </Bridges>
+</Settings>

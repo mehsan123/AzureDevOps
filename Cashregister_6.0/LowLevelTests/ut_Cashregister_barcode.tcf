@@ -1,0 +1,187 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 2
+$
+$ TC: 1  Procedure = Cashregister_barcode  Description = LLR_010801
+$ TC: 2  Procedure = Cashregister_barcode  Description = LLR_010802
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Cashregister_barcode
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_barcode
+      Procedure Number = 8
+      Description = LLR_010801
+        # Begin Variable
+          Name = aCode
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 12345
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Active
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = Q
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = identifyProduct
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_barcode
+      Procedure Number = 8
+      Description = LLR_010802
+        # Begin Variable
+          Name = aCode
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 12345
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Idle
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = Q
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = identifyProduct
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 1
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = Cashregister_barcode
+    Procedure Number = 8
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = identifyProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

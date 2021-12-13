@@ -1,0 +1,567 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 1
+$
+$ TC: 1  Procedure = endSession            Description = empty basket
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_endSession
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = endSession
+      Procedure Number = 3
+      Description = empty basket
+        # Begin Variable
+          Name = ShoppingBasket[0]
+          Decl_type = struct Product*
+          Usage = Q
+          Value = &anApple
+        # End Variable
+
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = G
+          Value = 1
+        # End Variable
+
+        # Begin Variable
+          Name = scannedProducts
+          Decl_type = uint32_t
+          Usage = H
+          Value = 0
+        # End Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[1]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[2]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[3]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[4]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[5]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[6]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[7]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[8]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[9]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[10]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[11]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[12]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[13]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[14]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[15]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[16]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[17]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[18]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[19]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[20]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[21]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[22]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[23]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[24]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[25]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[26]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[27]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[28]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[29]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[30]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[31]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[32]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[33]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[34]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[35]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[36]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[37]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[38]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[39]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[40]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[41]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[42]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[43]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[44]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[45]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[46]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[47]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[48]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket[49]
+          Decl_type = struct Product*
+          Usage = Q
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+        # Begin Removed Variable
+          Name = ShoppingBasket [50]
+          Decl_type = struct Product*
+          Usage = H
+          Packed = T
+          TBrun Analysis = Suspended
+        # End Removed Variable
+
+      # Begin TC Stub
+        Procedure = Userinterface_show
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+      # Begin TC Stub TC Hit Count
+        Setting = 3
+        Specified = 1
+      # End TC Stub TC Hit Count
+
+      # End TC Stub
+
+    # End Test Case
+
+    # Begin Global
+      File = ./Cashregister.c
+      Name = anApple
+      Decl_type = struct Product
+      Value = {"Apple",12345,4,NO_OFFER}
+    # End Global
+
+# Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = endSession
+    Procedure Number = 3
+# End Isolated Procedure
+
+# Begin Stub
+  Procedure = Productdatabase_getCountedProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const struct Product *
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = &ldra_qq_lv_1
+    # Begin Declarations
+    # End Declarations
+    # Begin Local Declarations
+static struct CountedProduct ldra_qq_lv_1;
+    # End Local Declarations
+
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Productdatabase_getProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = &ldra_qq_lv_2
+    # Begin Declarations
+    # End Declarations
+    # Begin Local Declarations
+static struct Product ldra_qq_lv_2;
+    # End Local Declarations
+
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Productdatabase_getSpecificCountedProduct
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = &ldra_qq_lv_3
+    # Begin Declarations
+    # End Declarations
+    # Begin Local Declarations
+static struct CountedProduct ldra_qq_lv_3;
+    # End Local Declarations
+
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Productdatabase_resetCountedProducts
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Specialoffer_getPrice
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const uint32_t
+const uint32_t
+const tSpecialoffer
+  # End Overloading
+
+  # Begin MS Properties
+    Return Value = aQuantity
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_print
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Stub
+  Procedure = Userinterface_show
+  Method = Managed
+  Overloading = Prototype
+  # Begin Overloading
+const_char_pt
+  # End Overloading
+
+  # Begin MS Properties
+    # Begin Declarations
+    # End Declarations
+  # End MS Properties
+
+# End Stub
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Cashregister.c
+./Main.c
+# End White Files
+

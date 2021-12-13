@@ -1,0 +1,155 @@
+
+ # Begin Testbed Set
+
+ SET_TYPE = GROUP
+ SET_NAME = systemTesting
+ GENERATED_BY = Testbed 9.8.6
+ HOSTNAME = LAPTOP-IQLKFO1L
+
+    # Begin Source Files
+
+    RelativeFile = .\Cashregister.c
+    File = D:\AzureDevOps\Cashregister_6.0\Source\Cashregister.c
+    UNCFile = \\LAPTOP-IQLKFO1L\D\AzureDevOps\Cashregister_6.0\Source\Cashregister.c
+    RelativeFile = .\Main.c
+    File = D:\AzureDevOps\Cashregister_6.0\Source\Main.c
+    UNCFile = \\LAPTOP-IQLKFO1L\D\AzureDevOps\Cashregister_6.0\Source\Main.c
+    RelativeFile = .\Productdatabase.c
+    File = D:\AzureDevOps\Cashregister_6.0\Source\Productdatabase.c
+    UNCFile = \\LAPTOP-IQLKFO1L\D\AzureDevOps\Cashregister_6.0\Source\Productdatabase.c
+    RelativeFile = .\Specialoffer.c
+    File = D:\AzureDevOps\Cashregister_6.0\Source\Specialoffer.c
+    UNCFile = \\LAPTOP-IQLKFO1L\D\AzureDevOps\Cashregister_6.0\Source\Specialoffer.c
+    RelativeFile = .\Userinterface.c
+    File = D:\AzureDevOps\Cashregister_6.0\Source\Userinterface.c
+    UNCFile = \\LAPTOP-IQLKFO1L\D\AzureDevOps\Cashregister_6.0\Source\Userinterface.c
+
+    # End Source Files
+
+    # Begin Sysearch Include File Entries
+
+    IgnoreInclude_300 = matoya.h
+    IgnoreInclude_300 = stm32f2xx_adc.h
+    IgnoreInclude_300 = stm32f2xx.h
+    IgnoreInclude_300 = stm32f2xx_rcc.h
+    RelativeInclude = .\Userinterface.h
+    RelativeInclude = .\Userinterface.h
+    RelativeInclude = .\Productdatabase.h
+    RelativeInclude = .\Specialoffer.h
+    RelativeInclude = .\Cashregister.h
+
+    # End Sysearch Include File Entries
+
+    # Begin Sysppvar Preprocessor Macros
+
+
+    # End Sysppvar Preprocessor Macros
+
+    # Begin Options
+
+    set_attributes = 3 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    nb_mechanism = build
+    nb_start_in_dir = .\
+    nb_build_command = gcc "$$d$$f.$$e" -o "$$i$$x$$g"
+    nb_compile_command = gcc -c "$$d$$f.$$e"
+    nb_link_command = gcc $$d$$f.o -o "$$i$$x"
+    nb_ide_command = <Unknown TO GCC>
+    nb_makefile_command = mingw32-make -f "$(Makefile)" $(MakeGoal) $(MakeArgs)
+    nb_makefile_name = $$o.mak
+    nb_compile_each_file = T
+    nb_build_each_file = T
+    nb_makefile_in_start_in_dir = T
+    nb_proj_nmake_command =  
+    nb_proj_nmake_file =  
+    nb_proj_msdev_command =  
+    nb_proj_msdev_file =  
+    nb_projfile_in_start_in_dir = T
+    nb_proj_makefile_in_start_in_dir = T
+    nb_remove_pch = F
+    nb_substitute_source = F
+    sub_unused_files = F
+    nb_pipe = T
+    nb_force_console = 2
+    nb_object_extension = .O
+    enable_pre_build = 0
+    enable_post_build = 0
+    make_greenhills_bld = 0
+    set_property = 3
+    nb_harness = "$$i$$x$$g"
+    nb_executepath = $(Userdir)
+    nb_execute_each_file = T
+    nb_pipe_exec = F
+    exhdir = $(Userdir)
+    modinst_exh_stem = $(SourceStem)_$(Modnum)
+    using_exhstrip = F
+    using_validexh = T
+    single_set_exh = F
+    compress_exh = F
+    threaded_exh = F
+    memory_address_exh = F
+    compress_exh_method = bitmap
+    do178b_instr = T
+    tbcapture_instr = F
+    array_bounds_check = F
+    copy_ref_instr = 0
+    archive_exh = T
+    force_dynsplit = T
+    dyn_scan_option = 6
+    dyn_scan_custom_coverage = 5 60 100 100 60 100
+    dyn_scan_current_coverage = 5 60 100 100 60 100
+    dyn_scan_html = T
+    dyn_oview_sort = 0
+    dyn_oview_options_changed = 0
+    dyn_oview_file_by_file = 0
+    dyn_oview_files_table = 0
+    syntax_only = F
+    include = T
+    open_all_includes = T
+    shorten = T
+    tbset_data_file = tbset.dat
+    workdir = D:\AzureDevOps\WORKAREA\
+    y2k_text_format = 1
+    y2k_column_width = 80
+    ddf_text_format = 1
+    ddf_column_width = 80
+    iprog = inszt_$$o
+    iext = $$t
+    idir = <Default>\
+    exe_name = $$f
+    exe_append = .exe
+    cinstr_data_file = <Default>
+    cppinstr_data_file = <Default>
+    cpenfile = <Default>
+    cpppenfile = <Default>
+    cvalsfile = <Default>
+    cppvalsfile = <Default>
+    cglbfile = <Default>
+    cppglbfile = <Default>
+    cstandards_model = FACE-3.0-CVM
+    cexternal_standard = FACE-3.0-CVM
+    c_dialect = GCC
+    cppstandards_model = Qualification
+    cppexternal_standard = None
+    cpp_dialect = GCC
+    application_accessed = Contestbed
+    sysearch = <Default search - Source dir(s) - Installdir>
+    sysppvar = <Default search - Source dir(s) - Installdir>
+    dynamic_run_number = 1
+    history = 10
+    coverage = 3
+    exhwidth = 0
+    logging = T
+    thisdir = F
+    forcedataflow = T
+    dosnames = F
+    scanondemand = T
+    iprog_switch_os_format = F
+    iprog_flush_exh = F
+    preprocess_iprog = T
+    instr_template_io = F
+    current_compiler = MinGW200 GCC C/C++ v3.2
+    initial_compiler = MinGW200 GCC C/C++ v3.2
+
+    # End Options
+
+ # End Testbed Set

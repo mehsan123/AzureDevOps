@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+    <Global>
+        <Connections>
+            <Connection name="codeBeamer" port="8090" save="true" server="http://localhost:8090" username="mark.richardson">
+                <Entry1>P70sX88jRm1fjC+f7Otz2qcGrnwXh/Eqz1YWK9uv1f8=</Entry1>
+                <Entry2>bVKNaWrcbU+5IkCjBtpEaw==</Entry2>
+            </Connection>
+        </Connections>
+    </Global>
+    <Bridges>
+        <Bridge connection="codeBeamer" id="1_grp2">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520163322.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Summary</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Summary</data>
+                    <data name="internalName">name</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>High Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>High Level Requirement Specification</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp3">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520163353.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Summary</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Summary</data>
+                    <data name="internalName">name</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Source Code Mapping</name>
+                    <format>$(Reference)</format>
+                    <split/>
+                    <regex var="Reference">.+</regex>
+                    <data name="displayName">Source Code Mapping</data>
+                    <data name="internalName">sourceCodeMapping</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>Low Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Low Level Requirement Specification</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp4">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520165508.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Summary</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Summary</data>
+                    <data name="internalName">name</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>y</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: External Task</name>
+                    <format>$(Program)</format>
+                    <split/>
+                    <regex var="Program">.+</regex>
+                    <data name="displayName">External Task</data>
+                    <data name="internalName">externalTask</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Input File</name>
+                    <format>$(Input_File)</format>
+                    <split/>
+                    <regex var="Input_File">.+</regex>
+                    <data name="displayName">Input File</data>
+                    <data name="internalName">inputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Output File</name>
+                    <format>$(Output_File)</format>
+                    <split/>
+                    <regex var="Output_File">.+</regex>
+                    <data name="displayName">Output File</data>
+                    <data name="internalName">outputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Reference File</name>
+                    <format>$(Reference_File)</format>
+                    <split/>
+                    <regex var="Reference_File">.+</regex>
+                    <data name="displayName">Reference File</data>
+                    <data name="internalName">referenceFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>Low Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>High Level Tests</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp6">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file=""/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: TCF</name>
+                    <format>$(TCF)</format>
+                    <split/>
+                    <regex var="TCF">.+</regex>
+                    <data name="displayName">TCF</data>
+                    <data name="internalName">tCF</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>Unit Test</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Low Level Tests</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/7</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp5">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520164317.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: TCF</name>
+                    <format>$(TCF)</format>
+                    <split/>
+                    <regex var="TCF">.+</regex>
+                    <data name="displayName">TCF</data>
+                    <data name="internalName">tCF</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>Unit Test</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>Low Level Tests</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp1">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520163258.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Summary</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">Summary</data>
+                    <data name="internalName">name</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>System</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>System Requirement Specifications</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="codeBeamer" id="1_grp7">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.codebeamer_984/110520171425.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: Description</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">Description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: links</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">links</data>
+                    <data name="internalName">links</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: External Task</name>
+                    <format>$(Program)</format>
+                    <split/>
+                    <regex var="Program">.+</regex>
+                    <data name="displayName">External Task</data>
+                    <data name="internalName">externalTask</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Output File</name>
+                    <format>$(Output_File)</format>
+                    <split/>
+                    <regex var="Output_File">.+</regex>
+                    <data name="displayName">Output File</data>
+                    <data name="internalName">outputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Reference File</name>
+                    <format>$(Reference_File)</format>
+                    <split/>
+                    <regex var="Reference_File">.+</regex>
+                    <data name="displayName">Reference File</data>
+                    <data name="internalName">referenceFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: Input File</name>
+                    <format>$(Input_File)</format>
+                    <split/>
+                    <regex var="Input_File">.+</regex>
+                    <data name="displayName">Input File</data>
+                    <data name="internalName">inputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: LDRA Verified</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">LDRA Verified</data>
+                    <data name="internalName">lDRAVerified</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>External Task</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="issuetype">
+                    <Entry>
+                        <name>id</name>
+                        <value/>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>High Level Tests</value>
+                    </Entry>
+                </Setting>
+                <Setting name="jqlquery"/>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>/project/10</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>LDRA Cash Register</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+    </Bridges>
+</Settings>

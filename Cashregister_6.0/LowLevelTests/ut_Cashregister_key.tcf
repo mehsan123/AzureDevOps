@@ -1,0 +1,120 @@
+$----------------------------------------------------------------------------------------
+$ tcf_trimmer.py v1.0 Trimmed: 2020-05-01 11:32
+$ Tests: 2
+$
+$ TC: 1  Procedure = Cashregister_key      Description = store keystroke
+$ TC: 2  Procedure = Cashregister_key      Description = idle
+$----------------------------------------------------------------------------------------
+
+  # Begin Testbed Set
+    SET_TYPE = SYSTEM
+    SET_NAME = Cashregister
+    # Begin Source Files
+      File = ./Main.c
+      File = ./Cashregister.c
+      File = ./Specialoffer.c
+      File = ./Productdatabase.c
+      File = ./Userinterface.c
+    # End Source Files
+  # End Testbed Set
+
+    # Begin Properties
+      IBox = Light Grey
+    # End Properties
+
+    # Begin Attributes
+      Sequence Name = ut_Cashregister_key
+      Language Code = 2
+    # End Attributes
+
+$ Test Case 1
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_key
+      Procedure Number = 12
+      Description = store keystroke
+        # Begin Variable
+          Name = aKey
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 3
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Active
+        # End Variable
+
+        # Begin Variable
+          Name = theBarcode
+          Decl_type = uint32_t
+          Usage = G
+          Value = 12
+        # End Variable
+
+        # Begin Variable
+          Name = theBarcode
+          Decl_type = uint32_t
+          Usage = H
+          Value = 123
+        # End Variable
+
+    # End Test Case
+
+$ Test Case 2
+    # Begin Test Case
+      File = ./Cashregister.c
+      Procedure = Cashregister_key
+      Procedure Number = 12
+      Description = idle
+        # Begin Variable
+          Name = aKey
+          Decl_type = uint32_t
+          Usage = Z
+          Value = 3
+        # End Variable
+
+        # Begin Variable
+          Name = state
+          Decl_type = tCashRegisterState
+          Usage = G
+          Value = state_Idle
+        # End Variable
+
+        # Begin Variable
+          Name = theBarcode
+          Decl_type = uint32_t
+          Usage = G
+          Value = 12
+        # End Variable
+
+        # Begin Variable
+          Name = theBarcode
+          Decl_type = uint32_t
+          Usage = H
+          Value = 12
+        # End Variable
+
+    # End Test Case
+
+# Begin Isolated Procedure
+    File = ./Cashregister.c
+    Procedure = Cashregister_key
+    Procedure Number = 12
+# End Isolated Procedure
+
+# Begin Selected Files from Set
+./Cashregister.c
+./Main.c
+# End Selected Files from Set
+
+# Begin White Files
+./Userinterface.c
+./Productdatabase.c
+./Specialoffer.c
+./Cashregister.c
+./Main.c
+# End White Files
+

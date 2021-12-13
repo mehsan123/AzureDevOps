@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+    <Global>
+        <Connections>
+            <Connection name="REQUIREMENTS" port="" save="true" server="http://localhost" username="admin">
+                <Entry1>P70sX88jRm1fjC+f7Otz2qcGrnwXh/Eqz1YWK9uv1f8=</Entry1>
+                <Entry2>jHnu6drRypwqdPJIqeiL0Q==</Entry2>
+            </Connection>
+        </Connections>
+    </Global>
+    <Bridges>
+        <Bridge connection="REQUIREMENTS" id="1_grp1">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.polarion_984/070520172826.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: linkedWorkItems</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">linkedWorkItems</data>
+                    <data name="internalName">linkedWorkItems</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.verificationStatus</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">customFields.verificationStatus</data>
+                    <data name="internalName">customFields.verificationStatus</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>System</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="polarionquery">
+                    <Entry>
+                        <name>query</name>
+                        <value>reqtype.KEY:systemLevel</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="REQUIREMENTS" id="1_grp2">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.polarion_984/070520173135.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: linkedWorkItems</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">linkedWorkItems</data>
+                    <data name="internalName">linkedWorkItems</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.verificationStatus</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">customFields.verificationStatus</data>
+                    <data name="internalName">customFields.verificationStatus</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>High Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="polarionquery">
+                    <Entry>
+                        <name>query</name>
+                        <value>reqtype.KEY:highLevel</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="REQUIREMENTS" id="1_grp3">
+            <Types actiontype="0" importtype="1"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.polarion_984/080520090630.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: linkedWorkItems</name>
+                    <format>$(RefReq)</format>
+                    <split>,</split>
+                    <regex var="RefReq">.+</regex>
+                    <data name="displayName">linkedWorkItems</data>
+                    <data name="internalName">linkedWorkItems</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: description</name>
+                    <format>$(ReqBody)</format>
+                    <split/>
+                    <regex var="ReqBody">.+</regex>
+                    <data name="displayName">description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: title</name>
+                    <format>$(ReqName)</format>
+                    <split/>
+                    <regex var="ReqName">.+</regex>
+                    <data name="displayName">title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(ReqNumber)</format>
+                    <split/>
+                    <regex var="ReqNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.reference</name>
+                    <format>$(Reference)</format>
+                    <split/>
+                    <regex var="Reference">.+</regex>
+                    <data name="displayName">customFields.reference</data>
+                    <data name="internalName">customFields.reference</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.verificationStatus</name>
+                    <format>$(ReqStatus)</format>
+                    <split/>
+                    <regex var="ReqStatus">.+</regex>
+                    <data name="displayName">customFields.verificationStatus</data>
+                    <data name="internalName">customFields.verificationStatus</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>ReqType</name>
+                    <value>Low Level</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="polarionquery">
+                    <Entry>
+                        <name>query</name>
+                        <value>reqtype.KEY:lowLevel</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="REQUIREMENTS" id="1_grp5">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.polarion_984/080520090026.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: title</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">title</data>
+                    <data name="internalName">title</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: linkedWorkItems</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">linkedWorkItems</data>
+                    <data name="internalName">linkedWorkItems</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.tcf</name>
+                    <format>$(TCF)</format>
+                    <split/>
+                    <regex var="TCF">.+</regex>
+                    <data name="displayName">customFields.tcf</data>
+                    <data name="internalName">customFields.tcf</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.verificationStatus</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">customFields.verificationStatus</data>
+                    <data name="internalName">customFields.verificationStatus</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>Unit Test</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="polarionquery">
+                    <Entry>
+                        <name>query</name>
+                        <value>testType.KEY:unitTest</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+        <Bridge connection="REQUIREMENTS" id="1_grp4">
+            <Types actiontype="0" importtype="2"/>
+            <LastImport file="C:/LDRA_Workarea/Examples/Toolsuite/Cashregister_6.0/.polarion_984/080520075949.json"/>
+            <Correlations>
+                <Correlation>
+                    <name>Items: id</name>
+                    <format>$(TciNumber)</format>
+                    <split/>
+                    <regex var="TciNumber">.+</regex>
+                    <data name="displayName">id</data>
+                    <data name="internalName">id</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: description</name>
+                    <format>$(TciDesc)</format>
+                    <split/>
+                    <regex var="TciDesc">.+</regex>
+                    <data name="displayName">description</data>
+                    <data name="internalName">description</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.externalTask</name>
+                    <format>$(Program)</format>
+                    <split/>
+                    <regex var="Program">.+</regex>
+                    <data name="displayName">customFields.externalTask</data>
+                    <data name="internalName">customFields.externalTask</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.inputFile</name>
+                    <format>$(Input_File)</format>
+                    <split/>
+                    <regex var="Input_File">.+</regex>
+                    <data name="displayName">customFields.inputFile</data>
+                    <data name="internalName">customFields.inputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.outputFile</name>
+                    <format>$(Output_File)</format>
+                    <split/>
+                    <regex var="Output_File">.+</regex>
+                    <data name="displayName">customFields.outputFile</data>
+                    <data name="internalName">customFields.outputFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.referenceFile</name>
+                    <format>$(Reference_File)</format>
+                    <split/>
+                    <regex var="Reference_File">.+</regex>
+                    <data name="displayName">customFields.referenceFile</data>
+                    <data name="internalName">customFields.referenceFile</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: customFields.verificationStatus</name>
+                    <format>$(TciStatus)</format>
+                    <split/>
+                    <regex var="TciStatus">.+</regex>
+                    <data name="displayName">customFields.verificationStatus</data>
+                    <data name="internalName">customFields.verificationStatus</data>
+                    <writeable>n</writeable>
+                </Correlation>
+                <Correlation>
+                    <name>Items: linkedWorkItems</name>
+                    <format>$(TciParent)</format>
+                    <split>,</split>
+                    <regex var="TciParent">.+</regex>
+                    <data name="displayName">linkedWorkItems</data>
+                    <data name="internalName">linkedWorkItems</data>
+                    <writeable>n</writeable>
+                </Correlation>
+            </Correlations>
+            <Defaults>
+                <Default>
+                    <name>TciType</name>
+                    <value>External Task</value>
+                </Default>
+            </Defaults>
+            <Filters comparisonType="0"/>
+            <Settings>
+                <Setting name="polarionquery">
+                    <Entry>
+                        <name>query</name>
+                        <value>testType.KEY:externalTest</value>
+                    </Entry>
+                </Setting>
+                <Setting name="project">
+                    <Entry>
+                        <name>id</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                    <Entry>
+                        <name>name</name>
+                        <value>TheCashRegister</value>
+                    </Entry>
+                </Setting>
+            </Settings>
+        </Bridge>
+    </Bridges>
+</Settings>

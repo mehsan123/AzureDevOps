@@ -24,6 +24,7 @@ import numpy as np
 import pandas as pd
 import bokeh
 from bokeh.io import export_png
+from bokeh import export_svg
 
 from bokeh.io import output_file, show
 from bokeh.plotting import figure
@@ -285,7 +286,7 @@ def countingViolations():
     p.vbar(x=violationName[3], top=violationCount[3], width=0.9)
     p.xgrid.grid_line_color = None
     p.y_range.start = 0
-    export_png(p, filename = "Ptable.png")
+    export_svg(p, filename = "Ptable.svg")
         
 ######################################################################################
 #  Function runanalysis 

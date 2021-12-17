@@ -1,5 +1,6 @@
 # <BEGIN COPYRIGHT HEADER>
 #Hi Stephen!!!! This is me!!! your favorite FAE!!! :D1
+# Thanlks !!!
 # * =========================== LDRA Inc =========================== *
 # * UNCLASSIFIED                *
 # * FOR OFFICIAL USE ONLY                *
@@ -22,13 +23,13 @@ import sys
 import xml.etree.ElementTree as ET
 import numpy as np
 import pandas as pd
-import bokeh
-from bokeh.io import export_png
-from bokeh import export_svg
+# import bokeh
+# from bokeh.io import export_png
+# from bokeh import export_svg
 
-from bokeh.io import output_file, show
-from bokeh.plotting import figure
-
+# from bokeh.io import output_file, show
+# from bokeh.plotting import figure
+import ployly.express as px
 #List of all the header files to be excluded
 Filter_Header =[]
    
@@ -279,14 +280,22 @@ def countingViolations():
         violationCount.append(everySource[i].countViolations()[1])
         violationLevel.append(everySource[i].countViolations()[2])
         violationSource.append(everySource[i].countViolations()[3])
-    output_file("bars.html")
+ #   output_file("bars.html")
 
 
-    p = figure(x_range=violationName[3], height=100, title=" violationCount",toolbar_location=None, tools="")
-    p.vbar(x=violationName[3], top=violationCount[3], width=0.9)
-    p.xgrid.grid_line_color = None
-    p.y_range.start = 0
-    export_svg(p, filename = "Ptable.svg")
+ #   p = figure(x_range=violationName[3], height=100, title=" violationCount",toolbar_location=None, tools="")
+ #   p.vbar(x=violationName[3], top=violationCount[3], width=0.9)
+ #   p.xgrid.grid_line_color = None
+ #   p.y_range.start = 0
+ #   export_svg(p, filename = "Ptable.svg")
+ 
+    data_canada = px.data.gapminder().query("country == 'Canada'")
+    # fig = px.bar(data_canada, x='year', y='pop')
+    long_df = px.data.medals_long()
+    fig = px.bar(long_df, x="nation", y="count", color="medal", title="Long-Form Input")
+    fig.show()
+    fig.write_image("fig1.png")
+
         
 ######################################################################################
 #  Function runanalysis 
